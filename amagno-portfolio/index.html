@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arildo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Arildo Magno</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiências</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Arildo Magno</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiências</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Arildo Magno profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Prazer,</p>
+        <h1 class="title">Arildo Magno</h1>
+        <p class="section__text__p2">Desenvolvedor Full-Stack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Arildo-Magno-FlowCV-Resume-20231122.pdf')"
+            target="_blank"
+          >
+            Baixar Currículo
+          </button>
+          <button class="btn btn-color-1" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })">
+            Informações de Contato
+          </button>          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://br.linkedin.com/in/arildo-magno-3a34a785/', '_blank')"
+            target="_blank"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/amagnom/', '_blank')"
+            target="_blank"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Saiba Mais</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiências</h3>
+              <p>5+ anos Back-End</p>
+              <p>5+ anos Front-End</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Bacharelado em Ciência da Computação<br />Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais IFMG</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Desenvolvedor Full-Stack com formação superior em Ciência da Computação e experiência em diversas áreas, incluindo orgãos governamentais, mercado financeiro, sistemas ERP e educacionais. Possui conhecimento de metodologias ágeis e de desenvolvimento, além de facilidade em aprender novas tecnologias e em encarar novos desafios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.querySelector('#experience').scrollIntoView({ behavior: 'smooth' })"
+      >
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore minhas</p>
+      <h1 class="title">Experiências</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-End Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>HTML</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                  style="width: 100px; height: 50px;">
+                  <h3>CSS</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>JavaScript</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>TypeScript</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                  style="width: 100px; height: 50px;">
+                  <h3>React</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>    
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>ASP.NET</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>          
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Angular</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>DevOps</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>UI/UX</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>C#</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>.NET</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Pyhton</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>SQL</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Java</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Node JS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Django</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>MongoDB</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div
+                style="width: 100px; height: 50px;">
+                  <h3>Spring</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })"
+      >
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Encontre alguns dos meus</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <a href="https://github.com/amagnom/Live/" target="_blank" class="details-container color-container">
+            <div>
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Lives"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Live Admin</h2>
+            </div>
+          </a>
+          <a href="https://github.com/amagnom/prototipo-aplicacao-web-deteccao-plagio/" target="_blank" class="details-container color-container">
+            <div>
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Detector Plagio"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Detector de Plágio</h2>
+            </div>
+          </a>
+          <a href="https://github.com/amagnom/IAFuzzyCovidDetection" target="_blank" class="details-container color-container">
+            <div>
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="IA Covid"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">IA Covid</h2>
+            </div>
+          </a>
+          <a href="https://github.com/amagnom/DropboxClone/" target="_blank" class="details-container color-container">
+            <div>
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.png"
+                  alt="Dropbox"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">DropBox Clone</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })"
+      >
+    </section>
+    <section id="contact">
+      <h1 class="title">Entre em contato comigo</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com" target="_blank">amagnomacedo@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://br.linkedin.com/in/arildo-magno-3a34a785" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiências</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
