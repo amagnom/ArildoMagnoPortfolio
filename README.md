@@ -11,7 +11,7 @@ Este projeto trata-se do meu Portfólio com alguns projetos.
 
 ## Live
 
-1. **Você pode acessar o website clicando no link abaixo:**
+1. **Você pode acessar o website clicando no link abaixo:** <br> 
    https://amagnom.github.io/ArildoMagnoPortfolio/
 
 
